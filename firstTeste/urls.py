@@ -14,8 +14,8 @@ router.register(r'employee', EmployeeViewSet)
 router.register(r'andress', AndressViewSet)
 
 urlpatterns = [
-    url(r'^docs', schema_view),
-    url(r'^api', include(router.urls)),
+    url(r'^docs/', schema_view),
+    url(r'^api/', include(router.urls)),
     url(r'^$', home, name='home'),
-    url(r'^admin', include(admin.site.urls)),
+    url(r'^admin/', include(admin.site.urls)),
 ]
