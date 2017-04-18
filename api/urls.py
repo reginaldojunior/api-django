@@ -3,14 +3,14 @@ from django.contrib import admin
 from core.views import home
 from rest_framework import routers, serializers, viewsets
 from core.models import Employee
-from views import EmployeeViewSet
 from rest_framework_swagger.views import get_swagger_view
+import viewsets
 
 schema_view = get_swagger_view(title='API Employee')
 
 router = routers.DefaultRouter()
 
-router.register(r'employee', EmployeeViewSet)
+router.register(r'employee', viewsets.EmployeeViewSet)
 
 urlpatterns = [
     url(r'^$', home, name='home'),
