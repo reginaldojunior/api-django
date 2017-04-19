@@ -11,8 +11,8 @@ class Employee(models.Model):
     department = models.CharField(max_length=100)
 
     class Meta:
-        verbose_name = "Employee"
-        verbose_name_plural = "Employees"
+        verbose_name = "employee"
+        verbose_name_plural = "employees"
 
     def __unicode__(self):
         return self.name
