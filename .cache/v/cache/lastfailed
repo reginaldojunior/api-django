@@ -1,1 +1,6 @@
-{}
+{
+  "tests/employee_api_test.py::test_delete": true, 
+  "tests/employee_api_test.py::test_get": true, 
+  "tests/employee_api_test.py::test_get_not_found": true, 
+  "tests/employee_api_test.py::test_update": true
+}
