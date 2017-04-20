@@ -1,3 +1,7 @@
+# STATUS
+
+[![Build Status](https://travis-ci.org/reginaldojunior/api-django.svg?branch=master)](https://travis-ci.org/reginaldojunior/api-django)
+
 # INSTALL
 
 ### First init virtual env with this steps
