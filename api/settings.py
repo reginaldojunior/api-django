@@ -93,7 +93,7 @@ DATABASES = {
         # Or path to database file if using sqlite3.
         'NAME': 'luizalabsteste',
         'USER': 'root',                  # Not used with sqlite3.
-        'PASSWORD': '',              # Not used with sqlite3.
+        'PASSWORD': 'root',              # Not used with sqlite3.
         # Set to empty string for localhost. Not used with sqlite3.
         'HOST': '',
         # Set to empty string for default. Not used with sqlite3.
