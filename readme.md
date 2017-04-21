@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/reginaldojunior/api-django.svg?branch=master)](https://travis-ci.org/reginaldojunior/api-django)
 
+[![Coverage Status](https://coveralls.io/repos/github/reginaldojunior/api-django/badge.svg?branch=master)](https://coveralls.io/github/reginaldojunior/api-django?branch=master)
+
 # INSTALL
 
 ### First init virtual env with this steps
