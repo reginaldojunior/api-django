@@ -1,6 +1,11 @@
 import requests
 import pytest
 import json
+from api.viewsets import EmployeeViewSet
+
+import logging
+
+logging.basicConfig(filename='example.log', level=logging.DEBUG)
 
 
 @pytest.fixture
@@ -14,6 +19,17 @@ def temporary_employee():
     employee.save()
 
     return employee
+
+
+@pytest.mark.django_db
+def test_montadora_viewset(temporary_employee):
+    viewset = EmployeeViewSet()
+    found = False
+    for record_dict in viewset.queryset.values():
+        if record_dict['name'] == "Reginaldo":
+            found = True
+
+    assert found is True
 
 
 @pytest.mark.django_db
